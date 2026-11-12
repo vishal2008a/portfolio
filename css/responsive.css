@@ -1,0 +1,508 @@
+
+/* ============================================
+   VISHAL JADHAV PORTFOLIO
+   RESPONSIVE DESIGN SYSTEM
+   Desktop | Tablet | Mobile
+============================================ */
+
+
+/* ============================================
+   1. LARGE LAPTOPS
+============================================ */
+
+@media (max-width: 1200px) {
+
+    .section {
+        width: 92%;
+    }
+
+    .navbar {
+        width: 94%;
+    }
+
+    .hero {
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+}
+
+
+/* ============================================
+   2. TABLETS AND SMALL LAPTOPS
+============================================ */
+
+@media (max-width: 992px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 0.8fr;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 53px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .visual-card {
+        height: 350px;
+    }
+
+    .visual-letter {
+        font-size: 150px;
+    }
+
+    .visual-ring {
+        width: 190px;
+        height: 190px;
+    }
+
+    .section-heading h2 {
+        font-size: 42px;
+    }
+
+}
+
+
+/* ============================================
+   3. TABLETS
+============================================ */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        top: 12px;
+        padding: 13px 18px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 150px;
+        gap: 50px;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .visual-card {
+        height: 380px;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-main {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .experience-date {
+        white-space: normal;
+    }
+
+}
+
+
+/* ============================================
+   4. MOBILE DEVICES
+============================================ */
+
+@media (max-width: 650px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        width: 92%;
+        padding: 12px 18px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+        top: 65px;
+        left: 0;
+
+        width: 100%;
+        padding: 25px;
+
+        flex-direction: column;
+        gap: 20px;
+
+        background: #191F1B;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+
+        box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        width: 90%;
+        padding-top: 140px;
+        gap: 40px;
+    }
+
+    .availability {
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 10vw, 52px);
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .hero-actions {
+        gap: 12px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        padding: 13px 17px;
+        font-size: 12px;
+    }
+
+    .hero-socials {
+        margin-top: 30px;
+    }
+
+
+    /* HERO VISUAL */
+
+    .visual-card {
+        height: 300px;
+        border-radius: 18px;
+    }
+
+    .visual-letter {
+        font-size: 130px;
+    }
+
+    .visual-ring {
+        width: 175px;
+        height: 175px;
+    }
+
+    .visual-top,
+    .visual-bottom {
+        left: 15px;
+        right: 15px;
+        font-size: 8px;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .section {
+        width: 90%;
+        padding-top: 90px;
+        padding-bottom: 35px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading h2,
+    .contact-card h2 {
+        font-size: 34px;
+        letter-spacing: -1px;
+    }
+
+    .eyebrow {
+        font-size: 10px;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-main {
+        grid-column: auto;
+        min-height: 230px;
+    }
+
+    .glass-card {
+        padding: 23px;
+    }
+
+    .glass-card h3 {
+        font-size: 19px;
+    }
+
+
+    /* SKILLS */
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        min-height: 175px;
+    }
+
+
+    /* TOOLS */
+
+    .tools-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .tool-item {
+        padding: 17px 10px;
+        font-size: 11px;
+    }
+
+    .technical-strip {
+        padding: 20px;
+    }
+
+    .tech-list {
+        gap: 9px;
+    }
+
+    .tech-list span {
+        font-size: 11px;
+    }
+
+
+    /* EXPERIENCE */
+
+    .timeline {
+        margin-left: 5px;
+        padding-left: 23px;
+    }
+
+    .timeline-dot {
+        left: -29px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .experience-header h3 {
+        font-size: 20px;
+    }
+
+    .experience-list {
+        font-size: 12px;
+        padding-left: 17px;
+    }
+
+
+    /* EDUCATION */
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        min-height: 190px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-card {
+        padding: 45px 18px;
+        border-radius: 18px;
+    }
+
+    .contact-card p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        width: 90%;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 11px;
+        padding: 25px 0;
+    }
+
+}
+
+
+/* ============================================
+   5. SMALL MOBILE DEVICES
+============================================ */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .section-heading h2,
+    .contact-card h2 {
+        font-size: 29px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .visual-card {
+        height: 260px;
+    }
+
+    .visual-letter {
+        font-size: 110px;
+    }
+
+    .visual-ring {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+
+/* ============================================
+   6. LANDSCAPE MOBILE
+============================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .hero {
+        min-height: auto;
+        padding-top: 130px;
+    }
+
+    .visual-card {
+        height: 260px;
+    }
+
+}
+
+
+/* ============================================
+   7. REDUCED MOTION
+============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
